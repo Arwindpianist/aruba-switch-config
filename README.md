@@ -45,7 +45,7 @@ This guide provides step-by-step instructions for configuring Aruba Switches ver
 2. **Copying Persona Configuration to Interfaces:**
    ```
    interface 1/1/1-1/1/28
-   persona custom <persona-name> copy
+   persona custom <persona-name> attach
    exit
    ```
    Replace `<persona-name>` with the name of the persona you previously created. This command copies the configuration defined in the specified persona to the interfaces within the specified range.
@@ -66,7 +66,7 @@ This guide provides step-by-step instructions for configuring Aruba Switches ver
 2. **Copying Trunk Persona Configuration to Interfaces:**
    ```
    interface <x/x/x or x/x/x-x/x/x>
-   persona custom <trunk-persona-name> copy
+   persona custom <trunk-persona-name> attach
    exit
    ```
    Replace `<x/x/x or x/x/x-x/x/x>` with the range of interfaces where the trunk persona configuration should be applied. This command copies the trunk persona configuration to the specified interfaces.
